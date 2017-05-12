@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Implementation-Title: gluuAuth
 Implementation-Version: 0.0.1-SNAPSHOT
-Built-By: maxanderson
+Built-By: mand057
 Implementation-Vendor-Id: com.maxanderson
 Build-Jdk: 1.8.0_91
 Implementation-URL: http://projects.spring.io/spring-boot/gluuAuth/

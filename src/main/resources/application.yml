@@ -1,12 +1,13 @@
 security:
   oauth2:
     client:
-      clientId: 233668646673605
-      clientSecret: 33b17e044ee6a4fa383f46ec6e28ea1d
-      accessTokenUri: https://graph.facebook.com/oauth/access_token
-      userAuthorizationUri: https://www.facebook.com/dialog/oauth
+      clientId: 
+      clientSecret: 
+      accessTokenUri: https://sso.svugoogle.com/oxauth/seam/resource/restv1/oxauth/token
+      userAuthorizationUri: https://sso.svugoogle.com/oxauth/seam/resource/restv1/oxauth/authorize
       tokenName: oauth_token
-      authenticationScheme: query
+      authenticationScheme: form
       clientAuthenticationScheme: form
+      scope: openid
     resource:
-      userInfoUri: https://graph.facebook.com/me
+      userInfoUri: https://sso.svugoogle.com/oxauth/seam/resource/restv1/oxauth/authorize
