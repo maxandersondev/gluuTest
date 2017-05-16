@@ -2,12 +2,21 @@ security:
   oauth2:
     client:
       clientId: "@!988E.A9C3.8A68.AE11!0001!C559.2982!0008!9902.8721.B545.1646"
-      clientSecret: Y2xpZW50U2VjcmV0
+      #clientId: QCE5ODhFLkE5QzMuOEE2OC5BRTExITAwMDEhQzU1OS4yOTgyITAwMDghOTkwMi44NzIxLkI1NDUuMTY0Ng==
+      #clientSecret: Y2xpZW50U2VjcmV0
+      clientSecret: clientSecret
       accessTokenUri: https://sso.svugoogle.com/oxauth/seam/resource/restv1/oxauth/token
       userAuthorizationUri: https://sso.svugoogle.com/oxauth/seam/resource/restv1/oxauth/authorize
-      tokenName: oauth_token
+      #tokenName: oauth_token
+      #tokenName: javax.faces.ClientToken
       authenticationScheme: form
       clientAuthenticationScheme: form
       scope: openid
+      registered-redirect-uri: 
+        http://localhost:8080
+        https://sso.svugoogle.com/oxauth/login
     resource:
       userInfoUri: https://sso.svugoogle.com/oxauth/seam/resource/restv1/oxauth/authorize
+logging:
+  level:
+    root: DEBUG
