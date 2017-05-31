@@ -17,6 +17,15 @@ security:
       #  https://sso002.svugoogle.com/oxauth/login
     resource:
       userInfoUri: https://sso002.svugoogle.com/oxauth/seam/resource/restv1/oxauth/authorize
-logging:
-  level:
-    root: DEBUG
+#logging:
+#  level:
+#    root: error
+    
+server:
+  port: 8443
+  ssl:
+    key-store: keybag.p12
+    key-password: 123456
+    keyStoreType: PKCS12
+    keyAlias: tomcat
+    #protocol: TLS
